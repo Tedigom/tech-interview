@@ -114,12 +114,12 @@
        * 무방향 간선만 사용
        * 간선을 통해 양방향 이동 가능
        * (A,B) = (B,A)
-       <img src="./image/graph1.png" width="70%" height="70%">
+       <img src="./image/graph1.png" width="20%" height="20%">
     * 방향 그래프
        * 방향 간선만 사용
        * 간선을 통해 한 쪽 방향으로만 이동 가능 ( 일방통행 )
        * <A, B> ≠ <B, A>
-       <img src="./image/graph2.png" width="70%" height="70%">
+       <img src="./image/graph2.png" width="20%" height="20%">
     * 가중치 그래프
        * 간선에 비용(cost)나 가중치(weight)가 할당된 그래프
     * 부분 그래프
@@ -151,13 +151,13 @@
    * 깊이 우선 탐색( DFS )
       * 루트노드에서 시작하여 다음 branch로 넘어가기 전 해당 branch를 완벽하게 조사하는 것
       * 모든 노드를 방문하고자 할 때 이 방법을 선택한다. - DFS가 BFS보다 간편
-      <img src="./image/GraphDFS.png" width="70%" height="70%">
+      <img src="./image/GraphDFS.png" width="50%" height="50%">
       
       
    * 넓이 우선 탐색 ( BFS )
       * 루트 노드에서 시작해서 인접한 노드를 먼저 탐색하는 방법
       * 두 노드 사이의 최단 경로 혹은 임의의 경로를 찾고 싶을 때 이 방법을 선택한다.
-      <img src="./image/GraphBFS.png" width="70%" height="70%">
+      <img src="./image/GraphBFS.png" width="50%" height="50%">
       
       
    
