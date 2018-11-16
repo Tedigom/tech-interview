@@ -1,7 +1,7 @@
 # 1.Data Structure
 **:radio_button: Contents**
 * [Array](#array)
-* [Linked List](#linkedlist)
+* [LinkedList](#linkedlist)
 * [Hash Table](#hashtable)
 
 ### Array
@@ -10,7 +10,7 @@
 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.
 
 
-### Linked List
+### LinkedList
 * Linked List의 개념
 연결리스트는 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식으로 데이터를 저장하는 자료 구조이다. 
 선형배열이 "번호가 붙여진 칸에 원소들을 채워넣는 방식" 이라고 한다면, 연결리스트는 "각 원소들을 줄줄이 엮어서 관리하는 방식"이다.
