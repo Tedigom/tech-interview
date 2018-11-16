@@ -167,5 +167,51 @@
 
 *********
 ### Tree
+> - [https://gmlwjd9405.github.io/2018/08/12/data-structure-tree.html](https://gmlwjd9405.github.io/2018/08/12/data-structure-tree.html)
+
+* Tree - 노드로 이루어진 자료 구조
+   * 관련 용어
+      <img src="./image/DataStructure/TreeConcept.png" width="50%" height="50%">
+      * Root Node : 트리 구조에서 최상위에 존재하는 A와 같은 노드
+      * Node : 트리의 구성요소에 해당하는 A,B,C,D,E,F,G,H,I,J와 같은 요소
+      * Edge : 노드와 노드를 연결하는 연결설
+      * Terminal Node(Leaf Node) : 밑으로 또 다른 노드가 연결되어 있지 않은 H,I,J,F,G와 같은 노드
+      * Sub-Tree : 큰 트리(전체)에 속하는 작은 트리
+      * Level : 트리에서 각 층별로 숫자를 매김
+      * Height : 트리의 최고 레벨 (3)
+      
+   * Tree의 종류 - 이진트리
+      * 이진트리 : 각 노드가 최대 두 개의 자식을 갖는 트리 
+      * 전 이진 트리(Full Binary Tree) : 모든 노드가 0개 또는 2개의 자식 노드를 갖는 트리.
+      <img src="./image/DataStructure/Full-Binary-Tree.png" width="50%" height="50%">
+      * 완전 이진 트리(Complete Binary Tree) : 포화 이진 트리처럼 모든 레벨이 꽉 찬 상태는 아니지만, 차곡차곡 빈 틈 없이 노드가 채워진 이진 트리
+      <img src="./image/DataStructure/Complete-Binary-Tree.png" width="50%" height="50%">
+      * 포화 이진 트리(Perfect Binary Tree) : 전 이진트리이면서 완전 이진트리인 경우 ( 모든 레벨에서 꽉 참)
+      <img src="./image/DataStructure/Perfect-Binary-Tree.png" width="50%" height="50%">
+      
+* Tree의 특징
+  * 트리는 노드로 이루어진 자료 구조
+    1. 트리는 하나의 루트 노드를 갖는다.
+    2. 루트 노드는 0개 이상의 자식 노드를 갖고 있다.
+    3. 그 자식 노드 또한 0개 이상의 자식 노드를 갖고 있고, 이는 반복적으로 정의된다.
+  * 노드(node)들과 노드들을 연결하는 간선(edge)들로 구성되어 있다.
+    * 트리에는 사이클(cycle)이 존재할 수 없다.
+    * 노드들은 특정 순서로 나열될 수도 있고 그럴 수 없을 수도 있다.
+    * 각 노드는 부모 노드로의 연결이 있을 수도 있고 없을 수도 있다.
+    * 각 노드는 어떤 자료형으로도 표현 가능하다.
+  * 비선형 자료구조로 계층적 관계를 표현한다. Ex) 디렉터리 구조, 조직도
+  * 그래프의 한 종류
+    * 사이클(cycle)이 없는 하나의 연결 그래프(Connected Graph)
+    * 또는 DAG(Directed Acyclic Graph, 방향성이 있는 비순환 그래프)의 한 종류 이다.
+    
+  * 노드가 N개인 트리는 항상 N-1개의 간선(edge)을 가진다.
+    * 즉, 간선은 항상 (정점의 개수 - 1) 만큼을 가진다.
+  * 루트에서 어떤 노드로 가는 경로는 유일하다.
+    * 임의의 두 노드 간의 경로도 유일하다. 즉, 두 개의 정점 사이에 반드시 1개의 경로만을 가진다.
+  * 한 개의 루트 노드만이 존재하며 모든 자식 노드는 한 개의 부모 노드만을 가진다.
+    * 부모-자식 관계이므로 흐름은 top-bottom 아니면 bottom-top으로 이루어진다.
+  * 순회는 Pre-order, In-order 아니면 Post-order로 이루어진다. 이 3가지 모두 DFS/BFS 안에 있다.
+  * 트리는 이진 트리, 이진 탐색 트리, 균형 트리(AVL 트리, red-black 트리), 이진 힙(최대힙, 최소힙) 등이 있다.
+
 *********
 
