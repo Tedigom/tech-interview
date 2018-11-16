@@ -32,15 +32,15 @@
 * Linked List의 종류
   * 단일 연결 리스트
       * 단일 연결 리스트는 각 노드에 자료 공간과 한 개의 포인터 공간이 있고, 각 노드의 포인터는 다음 노드를 가리킨다.
-      <img src="./image/Single_linked_list.png" width="70%" height="70%">
+      <img src="./image/DataStructure/Single_linked_list.png" width="70%" height="70%">
 
   * 이중 연결 리스트
       * 이중 연결 리스트의 구조는 단일 연결 리스트와 비슷하지만, 포인터 공간이 두 개가 있고 각각의 포인터는 앞의 노드와 뒤의 노드를 가리킨다.
-      <img src="./image/Doubly_linked_list.png" width="70%" height="70%">
+      <img src="./image/DataStructure/Doubly_linked_list.png" width="70%" height="70%">
   
   * 원형 연결 리스트
       * 원형 연결 리스트는 일반적인 연결 리스트에 마지막 노드와 처음 노드를 연결시켜 원형으로 만든 구조이다.
-      <img src="./image/Circurlar_linked_list.png" width="70%" height="70%">
+      <img src="./image/DataStructure/Circurlar_linked_list.png" width="70%" height="70%">
   
       
 *********
@@ -114,12 +114,12 @@
        * 무방향 간선만 사용
        * 간선을 통해 양방향 이동 가능
        * (A,B) = (B,A)
-       <img src="./image/graph1.png" width="20%" height="20%">
+       <img src="./image/DataStructure/graph1.png" width="20%" height="20%">
     * 방향 그래프
        * 방향 간선만 사용
        * 간선을 통해 한 쪽 방향으로만 이동 가능 ( 일방통행 )
        * <A, B> ≠ <B, A>
-       <img src="./image/graph2.png" width="20%" height="20%">
+       <img src="./image/DataStructure/graph2.png" width="20%" height="20%">
     * 가중치 그래프
        * 간선에 비용(cost)나 가중치(weight)가 할당된 그래프
     * 부분 그래프
@@ -151,13 +151,15 @@
    * 깊이 우선 탐색( DFS )
       * 루트노드에서 시작하여 다음 branch로 넘어가기 전 해당 branch를 완벽하게 조사하는 것
       * 모든 노드를 방문하고자 할 때 이 방법을 선택한다. - DFS가 BFS보다 간편
-      <img src="./image/GraphDFS.png" width="50%" height="50%">
+      <img src="./image/DataStructure/GraphDFS.png" width="50%" height="50%">
+      <img src="./image/DataStructure/DFS_LinkedList.png" width="50%" height="50%">
       
       
    * 넓이 우선 탐색 ( BFS )
       * 루트 노드에서 시작해서 인접한 노드를 먼저 탐색하는 방법
       * 두 노드 사이의 최단 경로 혹은 임의의 경로를 찾고 싶을 때 이 방법을 선택한다.
-      <img src="./image/GraphBFS.png" width="50%" height="50%">
+      <img src="./image/DataStructure/GraphBFS.png" width="50%" height="50%">
+      <img src="./image/DataStructure/BFS_LinkedList.png" width="50%" height="50%">
       
       
    
