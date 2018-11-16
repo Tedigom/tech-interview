@@ -48,6 +48,13 @@
 * Hash Table의 개념
 해시 테이블(hash table), 해시 맵(hash map), 해시 표는 해시 함수를 사용하여 색인(index)을 버킷(bucket)이나 슬롯(slot)의 배열로 계산한다.
 
+* Hash Table 용어 정리
+   * collision - 서로 다른 입력값에 대해 동일한 해시값을 반환하는 것. 어떠한 해시함수든, 모든 입력 값에 대해 고유한 해시값을 만들어 내지는 못한다. 즉, collision은 피할 수 없다.
+      * HashTable & collision resolution 
+      > - [http://luyin.tistory.com/191](http://luyin.tistory.com/191)
+
+   * cluster - 일부 지역의 주소들을 집중적으로 반환 하는 결과로 데이터들이 한 곳에 모이는 문제
+
 * Hash Function
    * 해시 함수(hash function)는 임의의 길이의 데이터를 고정된 길이의 데이터로 매핑하는 함수이다.
    * 해시 함수는 큰 파일에서 중복되는 레코드를 찾을 수 있기 때문에 데이터베이스 검색이나 테이블 검색의 속도를 가속할 수 있다.
@@ -57,6 +64,8 @@
    
 *********
 ### Stack
+* Stack의 개념
+
 *********
 ### Queue
 *********
