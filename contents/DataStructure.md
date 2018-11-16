@@ -182,10 +182,13 @@
       
    * Tree의 종류 - 이진트리
       * 이진트리 : 각 노드가 최대 두 개의 자식을 갖는 트리 
+      
       * 전 이진 트리(Full Binary Tree) : 모든 노드가 0개 또는 2개의 자식 노드를 갖는 트리.
       <img src="./image/DataStructure/Full-Binary-Tree.png" width="50%" height="50%">
+      
       * 완전 이진 트리(Complete Binary Tree) : 포화 이진 트리처럼 모든 레벨이 꽉 찬 상태는 아니지만, 차곡차곡 빈 틈 없이 노드가 채워진 이진 트리
       <img src="./image/DataStructure/Complete-Binary-Tree.png" width="50%" height="50%">
+      
       * 포화 이진 트리(Perfect Binary Tree) : 전 이진트리이면서 완전 이진트리인 경우 ( 모든 레벨에서 꽉 참)
       <img src="./image/DataStructure/Perfect-Binary-Tree.png" width="50%" height="50%">
       
