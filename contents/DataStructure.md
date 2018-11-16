@@ -217,6 +217,7 @@
   * 트리는 이진 트리, 이진 탐색 트리, 균형 트리(AVL 트리, red-black 트리), 이진 힙(최대힙, 최소힙) 등이 있다.
 
 * 그래프와 트리의 차이점
+
   <img src="./image/DataStructure/graph-vs-tree.png" width="70%" height="70%">
 
 
