@@ -171,7 +171,7 @@
 
 * Tree - 노드로 이루어진 자료 구조
    * 관련 용어
-      <img src="./image/DataStructure/TreeConcept.jpeg" width="50%" height="50%">
+      <img src="./image/DataStructure/TreeConcept.png" width="50%" height="50%">
       * Root Node : 트리 구조에서 최상위에 존재하는 A와 같은 노드
       * Node : 트리의 구성요소에 해당하는 A,B,C,D,E,F,G,H,I,J와 같은 요소
       * Edge : 노드와 노드를 연결하는 연결설
