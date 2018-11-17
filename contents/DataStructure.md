@@ -227,6 +227,7 @@
 
 *********
 ### Heap
+> - [https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html](https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html)
 * Heap의 개념
    * Heap은 완전이진트리를 기본으로 하는 구조
    * 여러개의 값들 중 최댓값이나 최솟값을 빠르게 찾도록 만들어진 자료구조
@@ -234,7 +235,16 @@
    * 힙이 완전 이진 트리의 형태를 사용하는 이유는 최댓값, 최솟값의 빠른 검색 및 삽입/삭제의 속도 때문이다. 데이터의 삽입과 삭제 모두 O(log N)의 시간복잡도를 가진다.
    
 * Heap의 종류
-   * 최대
+   * 최대 힙(max heap)
+      * 부모 노드의 키 값이 자식 노드의 키 값보다 크거나 같은 완전 이진 트리
+      * key(부모 노드) >= key(자식 노드)
+   * 최소 힙(min heap)
+      * 부모 노드의 키 값이 자식 노드의 키 값보다 작거나 같은 완전 이진 트리
+      * key(부모 노드) <= key(자식 노드)
+      
+      <img src="./image/DataStructure/types-of-heap.png" width="70%" height="70%">
+
+* Heap에서 element 삽입 및 삭제는 블로그를 참조
 
 
 
