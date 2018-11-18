@@ -1,7 +1,6 @@
 # 2.Network
 **:radio_button: Contents**
 * [OSI 7계층](#osi-7계층)
-* [TCP/IP](#tcp-ip의-개념)
 * [TCP와 UDP](#tcp와-udp)
 * [TCP와 UDP의 헤더 분석](#tcp와-udp의-헤더-분석)
 
@@ -147,9 +146,12 @@
             * 잘 정의된 캐시 컨트롤
             * 블록 다누이 인코딩 전송
             * 지속 연결 회선 (keep alive connection)을 통한 재사용 가능
+            
+*********
+### TCP와 UDP
+>>>>>>> b7cc3e0408a5bba88f082200614132d2cb785d24
 
+*********
+### TCP와 UDP의 헤더 분석
 
-
-
-
-    
+*********
