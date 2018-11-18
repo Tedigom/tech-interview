@@ -8,7 +8,7 @@
   * TCP와 UDP의 비교
   * TCP와 UDP의 헤더
 * [GET 메서드와 POST 메서드](#get-메서드와-post-메서드)
-* [쿠키(Cookie)와 세션(Session)](#쿠키와-세션)
+* [쿠키(Cookie)와 세션(Session)](#쿠키(Cookie)와-세션(Session))
 
 *********
 ### OSI 7계층
