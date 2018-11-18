@@ -2,7 +2,6 @@
 **:radio_button: Contents**
 * [OSI 7계층](#osi-7계층)
 * [TCP와 UDP](#tcp와-udp)
-* [TCP와 UDP의 헤더 분석](#tcp와-udp의-헤더-분석)
 
 *********
 ### OSI 7계층
@@ -258,7 +257,67 @@
 
     <img src="./image/Network/TCPUDPComparison.png" width="60%" height="60%"> 
     
+#
+* #### 4. TCP와 UDP의 헤더 분석
+* TCP 헤더
+
+    <img src="./image/Network/TCPHeader.png" width="60%" height="60%">
+    
+    * source port(16bit)
+        * 출발지 포트 번호를 표시한다. 응용 서비스에 따라 포트번호가 정해져 있는 것도 있지만, 대부분은 처음 세그먼트를 전송하는 측에서 임의의 번호를 사용한다.
+    
+    * destination port(16bit)
+        * 목적지 포트번호를 표시한다. 응용 서비스에 따라 포트번호가 정해져있다. (ex : telnet23)
+    
+    * sequence number(32bit)
+        * TCP 순서 번호를 표시한다. 통신을 시작하는 양단의 장비들이 별개로 임의의 번호부터 시작한다.
+
+    * acknowledgement Number (32bit)
+        * 상대방이 보낸 세그먼트를 잘 받았다는 것을 알려주기 위한 번호이다.
+    
+    * offset (4bit)
+        * TCP 헤더의 길이를 4바이트 단위로 표시한다. RCP 헤더는 최소 20, 최대 60byte이다.
+    
+    * Reserved (4bit)
+        * 사용하지 않는 필드이며, 모두 0으로 표시한다.
+    
+    * Flags(8bit)
+        * 제어비트(control bits) 라고도 하며, 세그먼트의 종류를 표시하는 필드이다.
+        
+    * Window size(16bit)
+        * 상대방의 확인 없이 전송할 수 있는 최대 바이트 수를 표시한다.
+    
+    * Checksum (16bit)
+        * 헤더와 데이터의 에러를 확인하기 위한 필드이다.
+        
+    * Urgent Pointer(16bit)
+        * 현재의 순서 번호부터 긴급포인트에 표시된 바이트 까지가 긴급한 데이터임을 표시한다.
+    
+    * option ( 0 ~ 40 byte)
+        * 최대 세그먼트 사이즈 지정 등 추가적인 옵션이 있을 경우 표시한다.
+
+* UDP 헤더
+        
+    <img src="./image/Network/UDPHeader.png" width="60%" height="60%">
+        
+    * source port(16bit)
+        * 출발지 포트 번호를 표시한다. 응용 서비스에 따라 포트번호가 정해져 있는 것도 있지만, 대부분은 처음 세그먼트를 전송하는 측에서 임의의 번호를 사용한다.
+
+    * destination port(16bit)
+        * 목적지 포트번호를 표시한다. 응용 서비스에 따라 포트번호가 정해져있다. (ex : DNS 53)
+    
+    * length (16bit)
+        * 헤더와 데이터를 포함한 전체 길이를 바이트 단위로 표시한다.
+        
+    * checksum(16bit)
+        * 헤더와 데이터의 에러를 확인하기 위한 필드이다. UDP 헤더는 에러복구를 위한 필드가 불필요하기 때문에 TCP 헤더에 비해 간단하다.
+
+
+> 세그먼트(Segment) : 데이터를 네트워크를 통한 실질적인 전송을 위하여 적절한 크기로 분할한 조각.
+   패킷(Packet) :  전송을 위해 분할된 데이터 조각(세그먼트)에 목적지까지의 전달을 위하여 Source IP 와 Destination IP가 포함된 IP Header가 붙은 형태의 메세지
+   프레임(Frame) : 최종적으로 데이터를 전송하기 전에 패킷에 Header(Mac Address 포함)와  CRC를 위한 Trailer가 붙은 메세지
+
 *********
-### TCP와 UDP의 헤더 분석
+
 
 *********
