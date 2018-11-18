@@ -3,7 +3,7 @@
 * [OSI 7계층](#osi-7계층)
 * [TCP와 UDP](#tcp와-udp)
   * TCP
-   - TCP의 3 way handshake와 4 way handshake
+    * TCP의 3 way handshake와 4 way handshake
   * UDP
   * TCP와 UDP의 비교
   * TCP와 UDP의 헤더
