@@ -60,13 +60,13 @@
         * TCP, UDP, ICMP, IGMP 등이 IP 데이터그램에 실려 전송됨
 
 
-* 4. Transport Layer
+  * 4. Transport Layer
     * 통신을 활성화하기 위한 계층, 보통 TCP 프로토콜을 이용함
     * Transport layer은 양 끝단(End to end)의 사용자들이 신뢰성 있는 데이터를 주고 받을 수 있도록 하여 상위 계층들이 데이터 전달의 유효성이나 효율성을 생각하지 않도록 한다.
     * 시퀀스 넘버 기반의 오류 제어 방식을 사용한다.
     * 전송 계층은 특정 연결의 유효성을 제어하고, 일부 프로토콜은 상태 개념이 있으며(stateful), 연결기반(connection oriented)이다. --> 전송 계층이 패킷들의 전송이 유효한지 확인하고, 전송 실패한 패킷들을 다시 전송한다.
     * 종단간 통신을 다루는 최하위 계층으로, 종단간 신뢰성 있고 효율적인 데이터를 전송하며, 오류 검출 및 복구와 흐름제어, 중복겁사 등을 수행한다.
     
-    * 패킷생성(Assembly/Sequencing/Deassembly/Error detection/ Request repeat/ Flow control) 및 전송
+    * 패킷생성(Assembly/Sequencing/Deassembly/Error detection/ Request repeat/ Flow control) 및 전송을 담당하는 계층이다./
 
     
