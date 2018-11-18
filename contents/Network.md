@@ -313,9 +313,9 @@
         * 헤더와 데이터의 에러를 확인하기 위한 필드이다. UDP 헤더는 에러복구를 위한 필드가 불필요하기 때문에 TCP 헤더에 비해 간단하다.
 
 
-> 세그먼트(Segment) : 데이터를 네트워크를 통한 실질적인 전송을 위하여 적절한 크기로 분할한 조각.
-> 패킷(Packet) :  전송을 위해 분할된 데이터 조각(세그먼트)에 목적지까지의 전달을 위하여 Source IP 와 Destination IP가 포함된 IP Header가 붙은 형태의 메세지
-> 프레임(Frame) : 최종적으로 데이터를 전송하기 전에 패킷에 Header(Mac Address 포함)와  CRC를 위한 Trailer가 붙은 메세지
+> 세그먼트(Segment) : 데이터를 네트워크를 통한 실질적인 전송을 위하여 적절한 크기로 분할한 조각.  
+ 패킷(Packet) :  전송을 위해 분할된 데이터 조각(세그먼트)에 목적지까지의 전달을 위하여 Source IP 와 Destination IP가 포함된 IP Header가 붙은 형태의 메세지  
+ 프레임(Frame) : 최종적으로 데이터를 전송하기 전에 패킷에 Header(Mac Address 포함)와  CRC를 위한 Trailer가 붙은 메세지
 
 *********
 
