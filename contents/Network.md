@@ -2,7 +2,11 @@
 **:radio_button: Contents**
 * [OSI 7계층](#osi-7계층)
 * [TCP와 UDP](#tcp와-udp)
-  * [TCP](#1.-TCP)
+  * TCP
+   - TCP의 3 way handshake와 4 way handshake
+  * UDP
+  * TCP와 UDP의 비교
+  * TCP와 UDP의 헤더
 
 *********
 ### OSI 7계층
@@ -150,7 +154,7 @@
 *********
 ### TCP와 UDP
 * 네트워크 계층 중 Transport Layer 에서 사용하는 프로토콜
-* #### 1. TCP
+* #### 1.TCP
     * 인터넷상에서 데이터를 메세지의 형태로 보내기 위해 IP와 함께 사용하는 프로토콜
     
      <img src="./image/Network/TCP.png" width="60%" height="60%"> 
