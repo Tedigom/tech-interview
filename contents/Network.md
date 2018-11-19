@@ -9,6 +9,7 @@
   * TCP와 UDP의 헤더
 * [GET 메서드와 POST 메서드](#get-메서드와-post-메서드)
 * [쿠키(Cookie)와 세션(Session)](#쿠키와-세션)
+* [REST와 RESTful의 개념](#rest와-restful의-개념)
 
 *********
 ### OSI 7계층
@@ -422,4 +423,80 @@ HTTP  프로토콜은 Connectionless( 클라이언트가 request를 서버에 �
 
 
 *********
+### REST와 RESTful의 개념
+#### REST의 개념 
+* REST의 정의 
+    * "Representational State Transfer"의 약자. -> 자원을 이름(자원의 대표)으로 구분하여 해당 자원의 정보를 주고 받는 것을 의미한다.
+    * 클라이언트와 서버 사이의 통신 방식 중 하나로 "URI와 HTTP 메소드를 이용해 객체화된 서비스에 접근하는 것. ( 직관적인 URI를 이용하여 오브젝트의 리소스에 접근하여 HTTP 메소드를 이용해 조작하는 것)"
+    * HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시하고, HTTP Method( POST, GET, PUT, DELETE) 를 통해 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
+    
+    > CRUD Operation  
+    Create : 생성 (POST)  
+    READ : 조회(GET)  
+    UPDATE : 수정(PUT)  
+    Delete : 삭제(DELETE)  
+    HEAD : header 정보조회 (HEAD)  
+    
+* REST의 특징 
+    * 1. REST는 ROA( Resource Oriented Architecture ) 와 깊은 연관이 있고, ROA의 4가지 속성(Addressability, connectedness, Statelessness, Homogeneous interface)과 깊은 연관이 있다.
+        * Statelessness
+            * 이전, 이후에 대한 직접적인 정보가 필요없이 직관적인 오브젝트에서의 접근으로 서비스를 처리한다.
+            * 세션 정보를 보관할 필요가 없어, 서비스의 자유도가 높아지고, 유연한 아키텍쳐의 적용이 가능하다. ( 쿠키/세션이 필요없다.)
+            
+            * Addrressability : URI를 이용
+                * REST는 모든 유일한 오브젝트에 대해 유일하고 직관적인 URI을 통해 접근한다. 
+                * 특정 오브젝트에 접근할 때 특정 URI를 통한 접근이 가능하지가 중요하다. 한가지 예로, 인터넷 메일을 확인할 때, 어떤메일은 특정 주소에서 반드시 특정링크를 클릭해야만 메일을 확인할 수 있고, 어떤 메일은 특정 메일을 특정 주소로 접근할 수 있다. 후자가 REST 이다.
+            
+            * Homogenoeus Interface : HTTP 메소드를 사용
+                * REST는 HTTP에서 제공하는 GET,PUT,POST,DELETE 의 메소드를 이용하여 서비스를 제공한다. 
+                
+            * Connectedness
+                * 서비스 내 하나의 리소스가 다른 리소스들 간의 관계에 표현될 수 있다.  
+    
+    * 2. Server - Client 구조
+        * 자원이 있는 쪽이 Server, 자원을 요청하는 쪽이 Client가 된다.
+            * REST Server : API를 제공하고, 비즈니스 로직 처리 및 저장을 책임진다.
+            * Client : 사용자 인증이나 context(세션, 로그인정보) 등을 직접 관리하고 책임진다.
+        * 서로 간의 의존성이 줄어든다.
+    
+    * 3. Cacheable (캐시 처리 가능)
+        * HTTP 프로토콜을 그대로 사용하므로,  HTTP의 특징인 캐싱 기능을 적용할 수 있다.
+        * HTTP 프로토콜 표준에서 사용하는 Last-Modified 태그나 E-Tag를 이용하면 캐싱 구현이 가능하다.
+        * 대량의 요청을 효율적으로 처리할 수 있고, 응답시간이 빨라지며, REST Server 트랜잭션이 발생하지 않기 때문에 전체 응답시간, 성능, 서버의 자원 이용률을 향상시킬 수 있다.
+    
+    * 4. Layered System(계층화)
+        * Client는 REST API Server만 호출한다.
+        * REST Server는 다중 계층으로 구성될 수 있다.
+            * API Server는 순수 비즈니스 로직을 수행하고, 그 앞단에 보안, 로드밸런싱, 암호화, 사용자 인증 등을 추가하여 구조상의 유연성을 줄 수 있다.
+            * 로드 밸런싱, 공유 캐시등을 통해 확장성과 보안성을 향상시킬 수 있다.
+        * PROXY, 게이트웨이 같은 네트워크 기반의 중간메체를 사용할 수 있다.
+        
+* REST의 장단점
+    * 장점
+        * HTTP 프로토콜 인프라를 그대로 사용하기 때문에 별도의 인프라가 필요없다.
+        * REST API 메세지가 의도하는 바를 명확하게 나타내므로 의도하는 바를 쉽게 파악할 수 있다.
+        * 서버와 클라이언트의 역할을 명확하게 분리한다.
+    * 단점
+        * 표준이 존재하지 않는다.
+        * 사용할 수 있는 메소드가 HTTP method이기때문에 형태가 제한적이다.  
 
+
+#### REST API의 개념
+* REST API란
+    * API (Application Programming Interface)란
+        * 데이터와 기능의 집합을 제공하여 컴퓨터 프로그램간 상호작용을 촉진하고, 서로 정보를 교환가능하도록 하는 것
+    * REST API의 정의
+        * REST 기반으로 서비스 API를 구현한 것으로, 대부분의 OpenAPI가 REST API를 제공한다.
+
+* REST API의 특징
+    * REST 기반으로 시스템을 분산하여 확장성과 재사용성을 높여 유지 보수 및 운용을 편리하게 할 수 있다.
+    * REST는 HTTP 표준을 기반으로 구현하므로, HTTP를 지원하는 프로그램 언어로 클라이언트, 서버를 구현할 수 있다.
+
+#### RESTful의 개념
+* RESTful이란?
+    * RESTful은 일반적으로 REST라는 아키텍쳐를 구현하는 웹 서비스를 나타내기 위해 사용되는 용어이다. 
+        * REST API를 제공하는 웹서비스를 RESTful하다고 할 수 있다.
+
+* RESTful하지 못한경우
+    * CRUD 기능을 모두 POST로만 처리하는 API
+    * route에 resource, id외의 정보가 들어가느 ㄴ경우 (/students/updateName)
