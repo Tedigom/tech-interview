@@ -429,7 +429,7 @@ HTTP  프로토콜은 Connectionless( 클라이언트가 request를 서버에 �
 * REST의 정의 
     * "Representational State Transfer"의 약자. -> 자원을 이름(자원의 대표)으로 구분하여 해당 자원의 정보를 주고 받는 것을 의미한다.
     * 클라이언트와 서버 사이의 통신 방식 중 하나로 "URI와 HTTP 메소드를 이용해 객체화된 서비스에 접근하는 것. ( 직관적인 URI를 이용하여 오브젝트의 리소스에 접근하여 HTTP 메소드를 이용해 조작하는 것)"
-    * HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시하고, HTTP Method( POST, GET, PUT, DELETE) 를 통해 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.
+    * HTTP URI(Uniform Resource Identifier)를 통해 자원을 명시하고, HTTP Method( POST, GET, PUT, DELETE) 를 통해 자원에 대한 CRUD Operation을 적용하는 것을 의미한다.  
     
     > CRUD Operation  
     Create : 생성 (POST)  
