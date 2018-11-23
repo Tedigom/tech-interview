@@ -5,11 +5,11 @@
 * [Join](#Join)
 * [트랜잭션(Transaction)](#Transaction)
 * [인덱스(Index)](#Index)
-* [옵티마이저(Optimizer)](#Optimizer)
+* [파티셔닝(Partitioning)](#Partitioning)
 
 -------
 
-### 데이터베이스 커넥션 풀
+# 데이터베이스 커넥션 풀
 > https://delf-lee.github.io/post/connection-pool/
 
 * Connection pool
@@ -214,6 +214,35 @@ Transaction은 데이터베이스의 상태를 변환시키는 하나의 논리�
 
 ********************
 
-# Optimizer
-            
+# Partitioning
 
+> https://nesoy.github.io/articles/2018-02/Database-Partitioning
+
+* 배경
+    * 서비스의 크기가 커지고, DB에 저장되는 데이터 또한 대용량화 되면서, 기존 DB 시스템의 Storage의 performance저하가 일어나게 되었다.
+    * 하나의 DBMS에 너무 큰 table이 들어가면서 용량 및 성능에 영향을 미쳤고, table을 partition이라는 작은 단위로 나누어 관리하는 partitioning기법이 나타났다.  
+
+* Partitioning의 개념
+    * 관리하기 어려운 큰 table이나 index를, 관리하기 쉬운 partition이라는 작은 단위로 물리적으로 분할하는 것을 의미
+    * DB에 접근하는 application의 입장에서는 이를 인식하지 못하며, 성능저하를 방지하고, 관리를 수월하게 할 수 있게 한다.
+
+* Partitioning의 Benefits
+    * 1. Availability (가용성)
+        * 물리적인 Partitioning으로 전체 데이터의 훼손 가능성이 줄어들고 데이터 가용성이 향상된다.  
+    
+    * 2. Manageability (관리용이성)  
+    
+    * 3. Performance (성능)
+        * 특정 DML 과 Query의 성능을 향상시킨다. 주로 대용량 Data Write 환경에서 효율적이다.
+        * 많은 Insert가 있는 OLTP 시스템에서 Insert 작업들을 분리된 파티션들로 분산시켜 경합을 줄인다.
+    
+* Partitioning의 Disadvantage
+    * Table 간의 Join에 대한 비용이 증가한다.
+    * 테이블과 인덱스를 별도로 파티션할 수는 없으며, 테이블과 인덱스를 같이 partitioning 하여야 한다.
+    
+* Partitioning의 종류
+    * Horizontal partitioning
+        * 샤딩과 동일한 개념이다.
+    * Vertical partitioning  
+    
+    <img src="./image/DB/partitioning1.png" width="70%" height="70%">
