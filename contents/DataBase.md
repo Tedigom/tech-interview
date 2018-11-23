@@ -159,7 +159,7 @@ Transaction은 데이터베이스의 상태를 변환시키는 하나의 논리�
         * Phantom read
             * 다른 트랜잭션에 의한 변경사항으로인해 현재 사용중인 트랜잭션의 WHERE 절의 조건에 맞는 새로운 행이 생길 수 있는 경우에 관한 것이다. 
             * 예를 들어 $100 미만인 계좌를 모두 찾아내는 트랜잭션이 있고, 이 트랜잭션에서 그 데이터를 두 번 읽는다고 가정했을 때, 처음 데이터를 읽어들이고 난 후에 다른 트랜잭션에서 잔고가 $0인 계좌를 새로 만들면 이 계좌도 잔고가 $ 100 이하라는 조건에 맞게 된다. 
-            * Transaction Isolation Level에서 phantom read를 지원하면 새로운 "phantom 행"이 나오지만, 지원하지 않으면 새로 생긴 행을 볼 수 없다.
+            * Transaction Isolation Level에서 phantom read를 지원하면 새로운 "phantom 행"이 나오지만, 지원하지 않으면 새로 생긴 행을 볼 수 없다.  
             
         
         <img src="./image/DB/IsolationLevel.png" width="70%" height="70%">
