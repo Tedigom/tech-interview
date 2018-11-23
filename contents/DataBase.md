@@ -163,7 +163,8 @@ Transaction은 데이터베이스의 상태를 변환시키는 하나의 논리�
 
             
 
-   <img src="./image/DB/IsolationLevel.png" width="70%" height="70%">
+               
+               <img src="./image/DB/IsolationLevel.png" width="70%" height="70%">
             
             
 
