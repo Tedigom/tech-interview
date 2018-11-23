@@ -68,8 +68,8 @@
 
 * 제 1정규형, 제 2정규형, 제 3 정규형, BCNF 에 대한 구체적인 설명(예시)는 아래의 링크로 대신한다.
 
-> https://yaboong.github.io/database/2018/03/09/database-normalization-1/
-> https://3months.tistory.com/193
+> https://yaboong.github.io/database/2018/03/09/database-normalization-1/  
+> https://3months.tistory.com/193  
 
 
 * 정규화의 장점
@@ -87,9 +87,9 @@
 ********************
 
 # Transaction
-> http://limkydev.tistory.com/100
-> https://coding-factory.tistory.com/226
-> http://hundredin.net/2012/07/26/isolation-level/
+> http://limkydev.tistory.com/100  
+> https://coding-factory.tistory.com/226  
+> http://hundredin.net/2012/07/26/isolation-level/  
 
 * Transaction의 정의
 Transaction은 데이터베이스의 상태를 변환시키는 하나의 논리적 기증을 수행하기 위한 작업의 단위, 또는 한꺼번에 모두 수행되어야 할 일련의 연산을 의미한다.  
