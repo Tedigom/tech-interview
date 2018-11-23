@@ -9,14 +9,16 @@
 * [Tree](#tree)
 * [Heap](#heap)
 
-### Array
+*********
+
+# Array
 * 배열(Array)의 개념
 배열(array)은 같은 타입의 변수들로 이루어진 유한 집합으로 정의할 수 있다.
 배열을 구성하는 각각의 값을 배열 요소(element)라고 하며, 배열에서의 위치를 가리키는 숫자를 인덱스(index)라고 한다.
 
 *********
 
-### LinkedList
+# LinkedList
 * Linked List의 개념
 연결리스트는 각 노드가 데이터와 포인터를 가지고 한 줄로 연결되어 있는 방식으로 데이터를 저장하는 자료 구조이다. 
 선형배열이 "번호가 붙여진 칸에 원소들을 채워넣는 방식" 이라고 한다면, 연결리스트는 "각 원소들을 줄줄이 엮어서 관리하는 방식"이다.
@@ -45,7 +47,7 @@
   
       
 *********
-### HashTable
+# HashTable
 * Hash Table의 개념
 해시 테이블(hash table), 해시 맵(hash map), 해시 표는 해시 함수를 사용하여 색인(index)을 버킷(bucket)이나 슬롯(slot)의 배열로 계산한다.
 
@@ -64,7 +66,7 @@
    *  같은 해시 값을 갖더라도 원래의 입력값이 같다는 것을 시사하지만 보장해주지는 않는다. 
    
 *********
-### Stack
+# Stack
 * Stack의 개념
    * 한 쪽 끝에서만 자료를 넣고 뺄 수 있는 LIFO(Last In First Out) 형식의 자료 구조
 * 스택(Stack)의 연산
@@ -82,7 +84,7 @@
    * 수식의 괄호 검사 (연산자 우선순위 표현을 위한 괄호 검사)
    * 후위 표기법 계산
 *********
-### Queue
+# Queue
 * Queue의 개념
   * 컴퓨터의 기본적인 자료 구조의 한가지로, 먼저 집어 넣은 데이터가 먼저 나오는 FIFO(First In First Out)구조로 저장하는 형식
 
@@ -104,7 +106,7 @@
    * 윈도우 시스템의 메시지 처리기
    * 프로세스 관리
 *********
-### Graph
+# Graph
 > - [https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html](https://gmlwjd9405.github.io/2018/08/13/data-structure-graph.html)
 
 * Graph의 개념
@@ -167,7 +169,7 @@
    * DFS, BFS에 대한 자세한 내용은 알고리즘 파트에서 다루기로 한다.
 
 *********
-### Tree
+# Tree
 > - [https://gmlwjd9405.github.io/2018/08/12/data-structure-tree.html](https://gmlwjd9405.github.io/2018/08/12/data-structure-tree.html)
 
 * Tree - 노드로 이루어진 자료 구조
@@ -226,7 +228,7 @@
 
 
 *********
-### Heap
+# Heap
 > - [https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html](https://gmlwjd9405.github.io/2018/05/10/data-structure-heap.html)
 * Heap의 개념
    * Heap은 완전이진트리를 기본으로 하는 구조
