@@ -1,4 +1,4 @@
-# 4.DataBase
+# 2.DataBase
 **:radio_button: Contents**
 * [데이터베이스 커넥션 풀](#데이터베이스-커넥션-풀)
 * [정규화](#정규화)
