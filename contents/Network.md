@@ -1,4 +1,4 @@
-# 2.Network
+# 4.Network
 **:radio_button: Contents**
 * [OSI 7계층](#osi-7계층)
 * [TCP와 UDP](#tcp와-udp)
