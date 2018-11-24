@@ -36,22 +36,22 @@ p) Android와 iOS의 차이점
 
 
 ### Answers  
-[a에 대한 Answer](#a에-대한-Answer)
-[b에 대한 Answer](#b에-대한-Answer)
-[c에 대한 Answer](#c에-대한-Answer)
-[d에 대한 Answer](#d에-대한-Answer)
-[e에 대한 Answer](#e에-대한-Answer)
-[f에 대한 Answer](#f에-대한-Answer)
-[g에 대한 Answer](#g에-대한-Answer)
-[h에 대한 Answer](#h에-대한-Answer)
-[i에 대한 Answer](#i에-대한-Answer)
-[j에 대한 Answer](#j에-대한-Answer)
-[k에 대한 Answer](#k에-대한-Answer)
-[l에 대한 Answer](#l에-대한-Answer)
-[m에 대한 Answer](#m에-대한-Answer)
-[n에 대한 Answer](#n에-대한-Answer)
-[o에 대한 Answer](#o에-대한-Answer)
-[p에 대한 Answer](#p에-대한-Answer)
+[a에 대한 Answer](#a에-대한-Answer)  
+[b에 대한 Answer](#b에-대한-Answer)  
+[c에 대한 Answer](#c에-대한-Answer)  
+[d에 대한 Answer](#d에-대한-Answer)  
+[e에 대한 Answer](#e에-대한-Answer)  
+[f에 대한 Answer](#f에-대한-Answer)  
+[g에 대한 Answer](#g에-대한-Answer)  
+[h에 대한 Answer](#h에-대한-Answer)  
+[i에 대한 Answer](#i에-대한-Answer)  
+[j에 대한 Answer](#j에-대한-Answer)  
+[k에 대한 Answer](#k에-대한-Answer)  
+[l에 대한 Answer](#l에-대한-Answer)  
+[m에 대한 Answer](#m에-대한-Answer)  
+[n에 대한 Answer](#n에-대한-Answer)  
+[o에 대한 Answer](#o에-대한-Answer)  
+[p에 대한 Answer](#p에-대한-Answer)  
 
 *********
 ## a에 대한 Answer
