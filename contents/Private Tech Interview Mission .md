@@ -2,56 +2,54 @@
 
 ### **:radio_button: Questions** 
 a) 지금 사용하는 스마트폰의 해상도는 얼마인가? 화면 캡쳐를 하여 bmp로 저장하면 용량이 어떻게 되는가? 
-그것을 png와 jpg로 저장하면 각각의 용량이 어떻게 되는가? 동영상의 압축원리는 무엇인가?
+그것을 png와 jpg로 저장하면 각각의 용량이 어떻게 되는가? 동영상의 압축원리는 무엇인가?  
+[a에 대한 Answer](#a에-대한-Answer)  
 
-b) 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 얼마만에 도착할까? 어떤 과정을 거칠까?
+b) 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 얼마만에 도착할까? 어떤 과정을 거칠까?  
+[b에 대한 Answer](#b에-대한-Answer)  
 
-c) 가상메모리는 무엇인가? 페이지와 스왑은 무엇인가? 디스크와 메모리의 속도차이는 어느정도이고, 그 원인은 무엇인가? SSD의 장점으 ㄴ무엇인가? 
+c) 가상메모리는 무엇인가? 페이지와 스왑은 무엇인가? 디스크와 메모리의 속도차이는 어느정도이고, 그 원인은 무엇인가? SSD의 장점은 무엇인가? 
+[c에 대한 Answer](#c에-대한-Answer)  
 
 d) 데이터베이스에 인덱스를 달면 좋은 점은 무엇인가? 그럼 왜 모든 컬럼에 인덱스를 달지 않는가? 멀티 컬럼 인덱스와 레인지 쿼리는 무엇인가?  
+[d에 대한 Answer](#d에-대한-Answer)  
 
 e) 10GB 짜리 파일을 C드라이브에서 D드라이브로 복사한다. 얼마나 걸릴까? A폰에서 C드라이브로 옮겨온다면? 만약 1MB 짜리 1만개라면 얼마나 걸릴까? 카피를 동시에 여러개 돌리면 더 빨라질까?
+[e에 대한 Answer](#e에-대한-Answer)  
 
 f) C또는 C++ 에서 메머리 관련 버그는 어떤것이 있는가? 각각 디버깅을 어떻게 할 수 있는가? 자바 또는 다른 언어에서 가비지 컬렉터의 역할은 무엇이고 그 원리는 무엇인가?
+[f에 대한 Answer](#f에-대한-Answer)  
 
 g) 암호에서 이야기하는 플레인 텍스트라는 것이 무엇인가? 비대칭 암호화, 그리고 인증서에 대해 설명하라. 사용자의 비밀번호를 안전하게 보관하는 방법은 무엇인가? 
+[g에 대한 Answer](#g에-대한-Answer)  
 
 h) 디지털 시계 프로그램을 만들어야한다. 초 단위로 표시해야한다. 어떻게 작성할 것인가? 그렇게 작성할 때 장점과 단점은?
+[h에 대한 Answer](#h에-대한-Answer)  
 
 i) 전임자가 만든 어떤 프로그램이 너무 느리다. 어떤 부분부터 어떻게 살펴보는 것이 좋은가? 
+[i에 대한 Answer](#i에-대한-Answer)  
 
 j) Dynamic programming, A* 알고리즘, B+ 트리에 대하여 설명하라 
+[j에 대한 Answer](#j에-대한-Answer)  
 
 k) 소스 관리 및 배포에 대해 아는대로 상세히 이야기 하라.
+[k에 대한 Answer](#k에-대한-Answer)  
 
 l) virtual machine에 대해 아는대로 상세히 이야기하라.
+[l에 대한 Answer](#l에-대한-Answer)  
 
 m) AWS 또는 GCP에 대해 아는대로 상세히 이야기하라 
+[m에 대한 Answer](#m에-대한-Answer)  
 
 n) NOSQL의 장단점에 대해 이야기하라
+[n에 대한 Answer](#n에-대한-Answer)  
 
 o) ASCII, Unicode, UTF-8에 대해 아는대로 상세히 이야기 하라.
+[o에 대한 Answer](#o에-대한-Answer)  
 
 p) Android와 iOS의 차이점
-
-
-### Answers  
-[a에 대한 Answer](#a에-대한-Answer)  
-[b에 대한 Answer](#b에-대한-Answer)  
-[c에 대한 Answer](#c에-대한-Answer)  
-[d에 대한 Answer](#d에-대한-Answer)  
-[e에 대한 Answer](#e에-대한-Answer)  
-[f에 대한 Answer](#f에-대한-Answer)  
-[g에 대한 Answer](#g에-대한-Answer)  
-[h에 대한 Answer](#h에-대한-Answer)  
-[i에 대한 Answer](#i에-대한-Answer)  
-[j에 대한 Answer](#j에-대한-Answer)  
-[k에 대한 Answer](#k에-대한-Answer)  
-[l에 대한 Answer](#l에-대한-Answer)  
-[m에 대한 Answer](#m에-대한-Answer)  
-[n에 대한 Answer](#n에-대한-Answer)  
-[o에 대한 Answer](#o에-대한-Answer)  
 [p에 대한 Answer](#p에-대한-Answer)  
+
 
 *********
 ## a에 대한 Answer
