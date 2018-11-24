@@ -231,3 +231,5 @@
 >http://minsone.github.io/programming/designpattern-command  
 > Data Binding : model과 view의 데이터를 일치시키는 것  
 >https://sungjk.github.io/2015/11/22/AngularJS(2).html
+
+<img src="./image/DesignPattern/comp.png" width="70%" height="70%">
