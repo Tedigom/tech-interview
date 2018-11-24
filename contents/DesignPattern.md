@@ -5,7 +5,8 @@
 * [Strategy 패턴](#Strategy-패턴)
 * [Template Method 패턴](#Template-Method-패턴)
 * [Factory Method 패턴](#Factory-Method-패턴)
-* [MVC1 패턴과 MVC2 패턴](#MVC1-패턴과-MVC2-패턴)
+* [MVC 패턴](#MVC-패턴)
+* [MVP 패턴](#MVP-패턴)
 * [MVVM 패턴](#MVVM-패턴)
 
 *********
@@ -86,16 +87,147 @@
 *********
 
 # Template Method 패턴
+> https://gmlwjd9405.github.io/2018/07/13/template-method-pattern.html
+* Template Method 패턴이란?
+    * 어떤 작업을 처리하는 일부분을 서브클래스로 캡슐화해 전체 일을 수행하는 구조는 바꾸지 않으면서 특정 단계에서 수행하는 내역을 바꾸는 패턴
+        * 전체적으로는 동일하지만, 부분적으로 다른 구문으로 구성된 메서드의 코드 중복을 최소화할 때 유용하다.
+        * 동일한 기능을 상위클래스에서 정의하면서 확장/변화가 필요한 부분만 서브클래스에서 구현할 수 있도록 한다.
+        * ex) 전체적인 알고리즘은 상위 클래스에서 구현하면서, 다른 부분은 하위 클래스에서 구현할 수 있도록 함으로써 전체적인 알고리즘 코드를 재사용하는 데에 유용하도록 한다.
+        
+    
+    <img src="./image/DesignPattern/TemplateMethodPattern.png" width="70%" height="70%">
+    
+
+* 수행하는 작업
+    * AbstractClass
+        * 템플릿 메서드를 정의하는 클래스
+        * 하위 클래스에 공통 알고리즘을 정의하고 하위 클래스에서 구현될 기능을 primitive 메서드 또는 hook 메서드로 정의하는 클래스
+    * ConcreteClass
+        * 물려받은 primitive 메서드 또는 hook 메서드를 구현하는 클래스
+        * 상위 클래스에 구현된 템플릿 메서드의 일반적인 알고리즘에서 하위 클래스에 적합하게 primitive 메서드나 hook 메서드를 오버라이드 하는 클래스
 
 *********
 
 # Factory Method 패턴
-
+> https://gmlwjd9405.github.io/2018/08/07/factory-method-pattern.html
+* Factory Method 패턴이란?
+    * 객체 생성 처리를 서브 클래스로 분리 해 처리하도록 캡슐화하는 패턴
+        * 객체의 생성 코드를 별도의 클래스/메서드로 분리함으로써 객체 생성의 변화에 대비하는 데 유용하다.
+        * 특정 기능의 구현은 개별 클래스를 통해 제공되는 것이 바람직한 설계이다.
+            * 기능의 변경이나 상황에 따른 기능의 선택은 해당 객체를 생성하는 코드의 변경을 초래한다.
+            * 상황에 따라 적절한 객체를 생성하는 코드는 자주 중복될 수 있다.
+            * 객체 생성 방식의 변화는 해당되는 모든 코드 부분을 변경해야 하는 문제가 발생한다.
+        * Strategy Pattern, Single pattern, Template Method pattern을 사용한다.
+    
+    <img src="./image/DesignPattern/FactoryMethodPattern.png" width="70%" height="70%">
+    
+* 수행하는 작업
+    * Product
+        * 팩토리 메서드로 생성될 객체의 공통 인터페이스
+    * ConcreteProduct
+        * 구체적으로 객체가 생성되는 클래스
+    * Creator
+        * 팩토리 메서드를 갖는 클래스
+    * ConcreteCreator
+        * 팩토리 메서드를 구현하는 클래스로 ConcreteProduct 객체를 생성
+        
 *********
 
-# MVC1 패턴과 MVC2 패턴
+# MVC 패턴
+> https://opentutorials.org/course/697/3828
+> http://ha0programming.tistory.com/23
+
+* MVC 패턴
+    * Model, View, Controller 의 각각의 약자로 어플리케이션을 세가지의 역할로 구분한 개발 방법론. 사용자가 Controller를 조작하면 Controller는 Model을 통해 데이터를 가져오고, 그 정보를 바탕으로 시각적인 표현을 담당하는 View를 제어하여 사용자에게 전달한다.
+    
+    * Model : 백그라운드에서 동작하는 로직을 처리한다.
+    * View : 사용자가 보게 될 결과 화면을 출력한다.
+    * Controller : 사용자의 입력처리와 흐름 제어를 담당한다.
+        
+    <img src="./image/DesignPattern/MVC.png" width="70%" height="70%">
+    
+    * Web 과 MVC
+        * 1. 사용자가 웹사이트에 접속한다.(Uses)
+        * 2. Controller가 사용자가 요청한 웹페이지를 서비스하기위해 model을 호출한다.(Manipulates)
+        * 3. 모델은 데이터베이스나 파일과 같은 데이터 소스를 제어한 후에 그 결과를 리턴한다.
+        * 4. Controller는 Model이 리턴한 결과를 View에 반영한다. (Updates)
+        * 5. 데이터가 반영된 View는 사용자에게 보여진다. (Sees)
+        
+        
+
+* MVC 패턴의 장점
+    * 유연하고 확장하기가 쉽다. : View와 model 간의 간섭을 피하고, Controller가 중간 관리를 하는 역할을 하여 간접 소통을 통해 좀더 유연한 구조를 설계할 수 있다.
+    * 디자이너와 개발자의 협업이 용이하다.
+    
+* MVC 패턴의 단점
+    * 기본 기능 설계를 위해 클래스들이 많이 필요하기 때문에 복잡할 수 있다.
+    * 설계 시간이 오래걸리고, 숙련된 개발자가 필요하다.
+    * 모델과 view의 완벽한 분리가 어렵다. - 패턴이 모호해질 수 있고, 변형이 올 수 있다.
+    
+> 의존성이 높다 ? : View와 Model의 높은 의존성은 어플리케이션이 커질수록 복잡해지고, 유지보수를 어렵게 만든다. 
+#
+* MVC1 패턴과 MVC2 패턴의 차이점
+    * Model 1 방식과 Model 2 방식의 가장 큰 차이점은 진입 부분이다.
+    * model 1
+        * 가장 먼저 JSP 에 들어오고, JSP에서 비즈니스 로직 및 VIEW를 처리한다.
+        * 비즈니스 로직, VIEW 화면출력 모두 JSP 에서 처리한다.
+    
+    <img src="./image/DesignPattern/MVC1.png" width="70%" height="70%">
+    
+    * model 2
+        * 가장 먼저 요청하는 곳이 서브릿단으로, 비즈니스 로직을 처리하는 서블릿을 완전히 분리 시켜 VIEW 단과 로직을 처리하는 단을 분리시킨다.
+        * 서블릿단에서 비즈니스 로직, JSP에서 VIEW단을 처리한다.
+        
+    <img src="./image/DesignPattern/MVC2.png" width="70%" height="70%">
+
 
 *********
+# MVP 패턴
+> https://magi82.github.io/android-mvc-mvp-mvvm/
 
+* MVP 패턴 개념
+    * Model View Presenter로 구성되어있다. MVC의 Controller 대신 presenter가 존재한다.
+    * presenter : view에서 요청한 정보를 model로 부터 가공해서 view로 전달하는 부분이다.  
+
+<img src="./image/DesignPattern/mvp.png" width="70%" height="70%">
+
+* MVP 패턴의 특징    
+    * Model과 View는 MVC와 동일하지만 사용자의 입력은 View에서 받는다.(MVC에서는 Controller)
+    * Model과 View는 각각 Presenter와 상호 동작을한다. ( 항상 presenter를 거쳐서 동작함.)
+    * MVC의 단점인 View와 Model의 의존성이 없어지게 된다.
+    * View와 Model의 의존성이 없는 대신 View와 Presenter가 1:1로 강한 의존성을 지닌다.
+    
+* MVP패턴 동작 순서
+    1. View로 사용자의 입력이 들어온다.
+    2. View는 presenter에 작업요청을 한다.
+    3. Presenter에서 필요한 데이터를 Model에 요청한다.
+    4. Model은 Presenter에 필요한 데이터를 응답한다.
+    5. Presenter는 View에 데이터를 응답한다.
+    6. View는 Presenter로 부터 받은 데이터로 화면에 보여주게 된다.
+    
+    
+*********
 # MVVM 패턴
+> https://magi82.github.io/android-mvc-mvp-mvvm/
 
+* MVVM 패턴 개념
+    * MVP의 Presenter 대신 Viewmodel이 존재한다.
+    * ViewModel : View를 표현하기 위해 만들어진 View를 위한 Model  
+    
+<img src="./image/DesignPattern/mvvm.png" width="70%" height="70%">
+
+* MVVM 패턴의 특징  
+    * Command 패턴과 DataBinding 패턴을 이용하여 View와 Viewmodel의 의존성을 사라지게 한다.
+    * MVP와 마찬가지로 View에서 입력이 들어오고, 입력이 들어오면 Command pattern을 통해 ViewModel에 명령을 내리게 되고,  Data Binding으로 인해 ViewModel 값이 변화하면 바로 View의 정보가 바뀐다.
+
+* MVVM패턴 동작 순서
+    1. View에 입력이 들어오면 Command pattern으로 ViewModel에 명령을 한다.
+    2. ViewModel은 필요한 데이터를 Model에 요청한다.
+    3. Model은 ViewModel에 필요한 데이터를 응답한다.
+    4. ViewModel은 응답받은 데이터를 가공해서 저장한다.
+    5. View는 ViewModel과의 Data Binding으로 인해 자동으로 갱신된다.
+    
+> Command Pattern : 요청을 객체로 캡슐화하여 명령을 단순화한다. (요청과 수행에 있어 분리하여 느슨한 관계를 가진다.)   
+>http://minsone.github.io/programming/designpattern-command  
+> Data Binding : model과 view의 데이터를 일치시키는 것  
+>https://sungjk.github.io/2015/11/22/AngularJS(2).html
