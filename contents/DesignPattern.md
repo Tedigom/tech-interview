@@ -208,7 +208,8 @@
     
 *********
 # MVVM 패턴
-> https://magi82.github.io/android-mvc-mvp-mvvm/
+> https://magi82.github.io/android-mvc-mvp-mvvm/  
+> 보다 자세한내용은 https://github.com/fimuxd/RxSwift/blob/master/Lectures/23_MVVM%20with%20RxSwift/Ch.23%20MVVM%20with%20RxSwift.md
 
 * MVVM 패턴 개념
     * MVP의 Presenter 대신 Viewmodel이 존재한다.
