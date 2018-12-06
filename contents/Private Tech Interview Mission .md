@@ -179,8 +179,35 @@ Stack Memory에서 발생가능한 에러는.
 2. 함수 포인터 오류로, 잘못된 함수 포인터의 전달로 인한 잘못된 함수 호출 등이 있다. 
 
 > Heap, Stack, Data  영역에 대한 링크. : http://dsnight.tistory.com/50
+#
+자바와 같은 언어에서 가비지 컬렉터는 메모리 관리 기법 중 하나이다.  
+하나의 객체는 메모리를 점유하고, 필요하지 않으면 메모리에서 해제되어야 한다. 메모리 점유는 다음과 같이 이루어진다.  
+a라는 객체가 만들어져 메모리의 한 부분을 점유하고, 특정 메서드 호출 후 수정이 완료되어 해당객체가 더이상 필요없는 객체, 즉 garbage가 된다.  
+이 garbage 객체를 효과적으로 처리하는 작업을 Garbage Collector라고 한다.  
+  
+Garbage collector은 다음과 같은 역할을 한다.  
+a. 메모리 할당  
+b. 사용중인 메모리 인식  
+c. 사용하지 않는 메모리 인식  
+JVM의 메모리는 크게 클래스, 자바스택, 힙, 네이티브 메소드 스택의 4개의 영역으로 이루어지고 이중 Garbage collector은 Heap 메모리를 다룬다.  
+  
+Garvage collector은 크게 두가지 타입으로 나뉜다. - Minor garbage collector & Major garbage collector  
+이 두가지 Garbage collector가 어떻게 상호작용 하느냐에 따라 Garbage Collector 방식에 차이가 나며, 성능에도 영향을 준다. Garbage Collector가 발생하거나, 객체가 각 영역에서 다른 영역으로 이동할 때 어플리케이션의 병목현상이 발생하여 성능에 영향을 준다. 그래서 JVM에서는 Thread Local Allocation Buffer(스레드 로컬 할당 버퍼 (TLAB))를 사용한다. 이를 통해 각 스레드 별 메모리 버퍼를 사용하면 다른 스레드에 영향을 주지 않는 메모리 할당 작업이 가능하다.  
+  
+  ### Garbage Collector 작동 원리  
+1. 작업을 시작하기 전, Garbage collector은 모든 객체가 쓰레기라 가정하고, 루트 목록 내 어떤 루트도 메모리를 가리키지 않는다고 가정한다.  
+2. 루트 목록을 순회하면서 각 루트가 참조하고 있는 힙 객체와의 관계여부를 조사한다. 루트가 참조하고 있는 힙 객체가 또다른 힙 객체를 참조하고 있다면 이 역시도 해당 루트와 관계있는 것으로 판단하고, 어떤 루트와도 관계가 없다면 Garbage로 간주한다.  
+3. Garbage 객체가 차지하고 있던 메모리는 '비어있는 공간'이 된다.  
+4. 를 Garbage collector는 힙을 순회하여 Garbage가 차지한 '비어있는 공간'의 Garbage의 객체의 인접객체를 이동시켜 차곡차곡 채워넣는다. 모든 객체의 이동이 끝나면 깨끗한 상태의 메모리를 얻게된다.
+
+> http://joyeeeeeee.blogspot.com/2018/01/c-60-garbagecollectorgarbagecollection.html
+
 *********
 ## g에 대한 Answer
+g) 암호에서 이야기하는 플레인 텍스트라는 것이 무엇인가? 비대칭 암호화, 그리고 인증서에 대해 설명하라. 사용자의 비밀번호를 안전하게 보관하는 방법은 무엇인가?   
+#
+
+
 *********
 ## h에 대한 Answer
 *********
