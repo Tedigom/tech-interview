@@ -29,5 +29,5 @@
 :star: [답변 내용](/contents/DesignPattern.md)
 
 ## 6. Private Tech Interview Mission
-:star: [답변 내용](/contents/Private Tech Interview Mission.md)
+:star: [답변 내용](/contents/PTIM.md)
 
