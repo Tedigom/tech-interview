@@ -63,7 +63,8 @@
 * MVVM 패턴
 
 ## 6. Private Tech Interview Mission
-:star: [답변 내용](/contents/PTIM.md)
+:star: [답변 내용](/contents/PTIM.md)  
+  
 a) 지금 사용하는 스마트폰의 해상도는 얼마인가? 화면 캡쳐를 하여 bmp로 저장하면 용량이 어떻게 되는가? 그것을 png와 jpg로 저장하면 각각의 용량이 어떻게 되는가? 동영상의 압축원리는 무엇인가?  
   
 b) 한국의 gmail 사용자가 미국의 gmail 사용자에게 메일을 보냈다. 얼마만에 도착할까? 어떤 과정을 거칠까?  
