@@ -24,16 +24,16 @@ g) 암호에서 이야기하는 플레인 텍스트라는 것이 무엇인가? �
 [g에 대한 Answer](#g에-대한-Answer)  
 
 h) Dynamic programming, A* 알고리즘, B+ 트리에 대하여 설명하라   
-[j에 대한 Answer](#h에-대한-Answer)  
+[h에 대한 Answer](#h에-대한-Answer)  
 
 i) virtual machine에 대해 아는대로 상세히 이야기하라.  
-[l에 대한 Answer](#i에-대한-Answer)  
+[i에 대한 Answer](#i에-대한-Answer)  
 
 j) NOSQL의 장단점에 대해 이야기하라  
-[n에 대한 Answer](#j에-대한-Answer)  
+[j에 대한 Answer](#j에-대한-Answer)  
 
 k) ASCII, Unicode, UTF-8에 대해 아는대로 상세히 이야기 하라.  
-[o에 대한 Answer](#k에-대한-Answer)  
+[k에 대한 Answer](#k에-대한-Answer)  
 
 
 *********
