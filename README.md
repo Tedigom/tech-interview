@@ -9,7 +9,7 @@
 3. [Operating System](#3-operating-system)
 4. [Network](#4-network)
 5. [Design Pattern](#5-design-pattern)
-6. [Private Tech Interview Mission] (#6-private-tech-interview-mission)
+6. [Private Tech Interview Mission](#6-private-tech-interview-mission)
 
 ---
 
