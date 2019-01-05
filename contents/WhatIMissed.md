@@ -10,7 +10,7 @@ b) 데이터 베이스에서의 PK, FK에대해 자세히 말해보아라
 c) 4handway shaking 에대해 자세히 말해보아라 ( close, wait등을 포함하여)
 [c에 대한 Answer](#c에-대한-Answer)  
 
-d) 자바의 Static 변수에 대해 설명하라
+d) 자바의 Static에 대해 설명하라
 [d에 대한 Answer](#d에-대한-Answer)  
 
 e) HTTP의 구성 ( header, body..)
@@ -80,10 +80,24 @@ c)  4handway shaking 에대해 자세히 말해보아라 ( close, wait등을 포
 
  *********
 ## d에 대한 Answer
-d) 자바의 Static 변수에 대해 설명하라
+d) 자바의 Static에 대해 설명하라
 #
- 
+1. Static 변수
+    * 클래스 변수로, 클래스가 정의만 되어도 접근이 가능한 변수이다. 
+    * 변수에 Static 키워드를 붙이면, 메모리 할당을 딱 한번만 하게 되어 메모리 사용에 이점을 볼 수 있게된다. 
+    * static 으로 설정하면 같은 곳의 메모리 주소만을 보기 때문에 static 변수의 값을 공유하게 된다. 
+    * 인스턴스 간에 데이터 공유가 필요한 상황에서 쓰임 ( singleton 패턴과 비슷함)
+    
+2. Static 메서드
+    * 클래스가 정의만 되어도 사용할 수 있는 메서드이다.
+    * Class.staticmethod() 형식과 같이 클래스를 통해 호출할 수 있다.
+    * Static 메소드 안에서는 인스턴스 변수 접근이 불가능하다. 
 
+Static은 반드시 메모리에 올라가며, Garbage Collector의 대상이 되지 않는다. 객체를 다시 생성한다고 해도, 그 값은 초기화 되지 않고 해당 클래스를 사용하는 모든 객체에서 공유하게 된다.  
+
+
+>  https://wikidocs.net/228
+>  https://m.blog.naver.com/PostView.nhn?blogId=ndb796&logNo=221203398703&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
 *********
 ## e에 대한 Answer
 e) HTTP의 구성 ( header, body..)
