@@ -72,6 +72,7 @@ e) HTTP의 구성 ( header, body..)
 
 >  http://ande226.tistory.com/56
 >  http://woodforest.tistory.com/120
+
 *********
 ## c에 대한 Answer
 c)  4handway shaking 에대해 자세히 말해보아라 ( close, wait등을 포함하여 )
