@@ -53,7 +53,6 @@ e) HTTP의 구성 ( header, body..)
         * Join 수행 시 왼쪽, 오른쪽 테이블의 모든 값을 읽어 JOIN을 수행한다.  LEFT Outer join과 Right Outer Join의 결과를 합집합으로 처리한 결과와 동일하다.  
     
 >  http://all-record.tistory.com/160
-
 >  http://server-engineer.tistory.com/306
 
             
@@ -62,7 +61,17 @@ e) HTTP의 구성 ( header, body..)
 ## b에 대한 Answer
 * b) 데이터 베이스에서의 PK, FK에대해 자세히 말해보아라 
 #
+1. Primary key(PK)
+    * 한 row를 대표하는 키이며, 중복된 값을 허용하지 않는다. 
+    * primary key가 여러개일 수도 있으며, 이럴 때는 두개가 똑같이 중복될 경우에만 중복값으로 생각한다.
+    
+2. Foreign Key(FK)
+    * Foreign key는 다른 테이블의 PK를 컬럼으로 가지고 있는 것으로, 중복이 가능하다.
+    * 한 테이블의 키 중 다른 테이블의 행(row)를 식별할 수 있는 키이다. 
+    * PK와 FK는 1:다 관계이다. 
 
+>  http://ande226.tistory.com/56
+>  http://woodforest.tistory.com/120
 *********
 ## c에 대한 Answer
 c)  4handway shaking 에대해 자세히 말해보아라 ( close, wait등을 포함하여 )
