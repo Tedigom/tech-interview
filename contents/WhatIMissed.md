@@ -13,7 +13,7 @@ c) 4handway shaking 에대해 자세히 말해보아라 ( close, wait등을 포�
 d) 자바의 Static에 대해 설명하라
 [d에 대한 Answer](#d에-대한-Answer)  
 
-e) HTTP의 구성 ( header, body..)
+e) HTTP
 [e에 대한 Answer](#e에-대한-Answer)  
 
 
@@ -100,8 +100,37 @@ Static은 반드시 메모리에 올라가며, Garbage Collector의 대상이 �
 >  https://m.blog.naver.com/PostView.nhn?blogId=ndb796&logNo=221203398703&proxyReferer=https%3A%2F%2Fwww.google.co.kr%2F
 *********
 ## e에 대한 Answer
-e) HTTP의 구성 ( header, body..)
+e) HTTP
 #
 
+1. HTTP에 대하여  
+HTTP(Hypertext Transfer Protocol)는 인터넷 상 데이터를 주고받기 위한 서버/클라이언트 모델을 따르는 
+프로토콜이다. 어플리케이션 레벨의 프로토콜로 TCP/IP 위에서 작동한다.  
+Hypertext가 붙은 이유는 하이퍼텍스트 기반으로 데이터를 전송하겠다는 뜻으로, 링크기반으로 데이터에 접속하겠다는 의미이다.  
+  
+2. Connectless & Stateless  
+HTTP는 **Connectless** 방식으로 작동된다. 즉, 서버에 연결하고, 요청해서 응답을 받으면 연결을 끊어버린다. 기본적으로 자원 하나에 대해 하나의 연결을 만드는데 이러한 작동 방식은 각각 이러한 장단점을 가진다.  
+
+* 장점 
+    * 불특정 다수를 대상으로 하는 서비스에 적합하며, 많은 수의 클라이언트가 웹 서비스를 이용하더라도 접속 유지는 최소한으로 할 수 있기 때문에, 더 많은 유저의 요청을 처리할 수 있다.  
+* 단점 
+    * 연결을 끊어버리기 때문에, 클라이언트의 이전상태를 알 수가 없다. 이러한 HTTP 특징을 **Stateless**라고 하는데, 이는 Connectless로 부터 파생되는 특징이다.
+    * 클라이언트의 이전 상태 정보를 알 수 없게 되면, 웹서비스를 하는데 문제가 생기는데, HTTP는 **cookie**를 이용하여 이러한 문제를 해결한다.  
+    
+3. URI  
+클라이언트 프로그램(웹 브라우저)는 URI를 이용하여 자원의 위치를 찾는다. URI는 HTTP와는 독립된 다른 체계이다. HTTP는 전송 프로토콜이고, URI는 자원의 위치를 알려주기 위한 프로토콜이다.  	
+URI는 "Uniform Resource Identifiers"의 줄임말로, World Wide Web 상에서 접근하고자 하는 자원의 위치를 
+나타내기 위해서 사용한다. 이때, 자원은 문서, 이미지, 동영상, 프로그램, 이메일 등이 될 수 있다. 메일을 받을 상대방의 위치를 나타내기 위하여 사용되는 email://tedigom7@gmail.com , 웹페이지의 위치를 나타내는 https://www.github.com/tedigom 등이 URI의 예이다.  
+
+4. Method  
+* GET : 정보를 요청하기 위하여 사용한다.(SELECT)
+* POST :  정보를 밀어넣기 위하여 사용한다. (INSERT)
+* PUT : 정보를 업데이트하기 위하여 사용한다. (UPDATE)
+* DELETE : 정보를 삭제하기 위하여 사용한다. (DELETE)
+* HEAD : (HTTP의) 헤더 정보만 요청한다. 해당 자원이 존재하는지, 혹은 서버에 문제가 없는지 확인하기 위해서이다.
+* OPTIONS : 웹서버가 지원하는 메서드의 종류를 요청한다.
+* TRACE :  클라이언트의 요청을 그대로 반환한다. 예를들면 echo 서비스로 서버상태를 확인하기 위한 목적으로 주로 사용한다.
+
+하지만 보통의 웹서비스는 GET과 POST만을 이용하여 개발한다. GET과 POST 만으로 모든 종류의 요청을 표현할 수 있기 때문이다.  
 
 *********
