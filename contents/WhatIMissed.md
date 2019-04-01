@@ -14,7 +14,10 @@ d) 자바의 Static에 대해 설명하라
 [d에 대한 Answer](#d에-대한-Answer)  
 
 e) HTTP  
-[e에 대한 Answer](#e에-대한-Answer)  
+[e에 대한 Answer](#e에-대한-Answer) 
+
+f) 인터페이스와 추상 클래스
+[f에 대한 Answer](#f에-대한-Answer) 
 
 
 *********
@@ -184,3 +187,13 @@ HTTP를 기반으로 하는 웹 서비스는 connectless 방식으로 이전의 
 > https://blog.outsider.ne.kr/312
 
 *********
+
+## f에 대한 Answer
+f) 인터페이스와 추상 클래스 사이의 차이점을 설명하라
+
+* 인터페이스(interface)에서는 클래스와 별도로 일련의 연관된 메소드를 선언한다.
+* 추상 클래스(abstract class)는 메소드를 선언하기는 하지만, 모든 메소드를 정의하지는 않는 불완전하게 정의된 클래스이다.
+  
+* 인터페이스와 추상클래스는 존재 목적이 다르다. 추상클래스는 그 추상 클래스를 상속받아서 기능을 이용하고, 확장시키는데에 있다. 반면 인터페이스는 함수의 껍데기만 있는데, 그 이유는 그 함수의 구현을 강제하기 위해서이다. 구현을 강제함으로 구현 객체의 같은 동작을 보장할 수 있다.
+
+> https://loustler.io/languages/oop_interface_and_abstract_class/
