@@ -319,4 +319,26 @@
  
 # 프로세서의 구조
 
-<img src="./image/OS/Processor.png" width="70%" height="70%">
+* 프로세서
+   * CPU(central processing unit / 중앙처리 장치)
+   * Microprocessor(마이크로프로세서)
+<img src="./image/OS/Processor.png" width="50%" height="50%">
+
+
+  
+* ALU(Arithmetic and Logic Unit / 연산장치)
+   * 더하기, 빼기, 곱하기, 나누기 등의 산술연산과 Not, and, or, xor등의 논리 연산을 수행
+
+* Register
+   * 메인메모리(주기억장치)에서 읽어온 명령어와 자료 등을 저장하는 임시 저장장치
+   * 연산장치에서 처리된 결과를 임시로 저장하는 저장장치
+   * 다음 실행할 명령어의 주소 값을 저장하는 저장장치
+   
+* Control unit(제어장치)
+   * 산술 및 논리연산에 필요한 작업 신호를 연속적으로 보냄으로써, 연산장치와 레지스터가 명령을 수행하게 하는 장치
+   * 명령어의 실행에 필요한 연산 순서와 연산 종류 등을 종합적으로 제어
+
+* Internal Bus(내부 버스)
+   * 프로세서 내부에서 레지스터와 연산장치(ALU)를 연결, 외부버스(External bus) 연결
+
+
