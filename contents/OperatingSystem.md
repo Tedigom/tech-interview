@@ -9,6 +9,7 @@
 * [교착상태(Deadlock)](#Deadlock)
 
 * [busyWaiting](#BusyWaiting)
+* [kernel과 shell](#kernel과-shell)
 -------
 
 # 프로세스와 스레드
@@ -294,4 +295,9 @@
 
 > 출처 : https://simsimjae.tistory.com/289 [SSJ]
  
-    
+ 
+ ****************************
+
+# kernel과 shell
+
+
