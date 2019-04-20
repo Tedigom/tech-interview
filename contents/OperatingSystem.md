@@ -10,7 +10,7 @@
 
 * [busyWaiting](#BusyWaiting)
 * [kernel과 shell](#kernel과-shell)
-* [프로세서의 구조](#프로세의-구조)
+* [프로세서의 구조](#프로세서의-구조)
 -------
 
 # 프로세스와 스레드
