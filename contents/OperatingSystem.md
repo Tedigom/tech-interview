@@ -319,4 +319,4 @@
  
 # 프로세서의 구조
 
-
+<img src="./image/OS/Processor.png" width="70%" height="70%">
