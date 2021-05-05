@@ -181,6 +181,7 @@
         * 스트리밍 서비스에 불리하다. ( 패킷이 손실된 경우 재전송 요청을 하기 때문에 )
         
      * TCP의 3 way handshake와 4 way handshake
+        * https://armful-log.tistory.com/43
         * 3-way handshake 란
             * TCP 통신을 이용하여 데이터를 전송하기 위해 네트워크 연결을 설정(Connection Establish) 하는 과정
             * 양쪽 모두 데이터를 전송할 준비가 되었다는 것을 보장하고, 실제로 데이터 전달이 시작하기 전에 한 쪽이 다른 쪽이 준비되었다는 것을 알 수 있도록 한다.
