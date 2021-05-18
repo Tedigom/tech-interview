@@ -591,4 +591,10 @@ starvation을 방지할 수 있는 방법으로 Aging 기법이 있다. ( 우선
     * C-Look 스케쥴링 - C-SCAN과 LOOK 스케쥴링의 결합된 형태이다. 어느 한쪽 방향으로 이동하면서 요청 작업을 처리하지만, 디스크의 끝까지 이동하는 것이 아니라 마지막 요청 트랙까지만 이동하고, 반대 방향의 최초 요청 트랙으로 즉시 이동한 뒤 다시 헤드가 디스크 요청을 처리하는 스케쥴링이다.
         * 53 --> 183 =점프=> 34 ---> 183
         
-> http://truemind5.blogspot.com/search/label/19.%20디스크%20스케쥴링
+> http://truemind5.blogspot.com/search/label/19.%20디스크%20스케쥴링  
+
+
+
+****************************
+커널 동작원리 ( 총정리)   
+https://medium.com/pocs/%EB%A6%AC%EB%88%85%EC%8A%A4-%EC%BB%A4%EB%84%90-%EC%9A%B4%EC%98%81%EC%B2%B4%EC%A0%9C-%EA%B0%95%EC%9D%98%EB%85%B8%ED%8A%B8-3-9ed24cf457ce  
